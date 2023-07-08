@@ -1,0 +1,451 @@
+@import url(./common.css);
+
+:root {
+    --primary: #5DA9E9;
+    --bgDark: rgb(0, 45, 107);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(0, 59, 50);
+    --bgLight: rgb(27, 81, 186);
+    --pink: rgb(226, 63, 91);
+    --footerBg: rgb(32, 39, 56);
+    --violet: rgb(48, 44, 118);
+    --brown: rgb(178, 116, 0);
+    --footerText: rgb(141, 177, 203);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header part styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: var(--bgLight);
+}
+
+nav .left {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .left img {
+
+    width: 160px;
+    border-radius: 10px;
+}
+
+nav .center {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+nav .right img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+nav .right button {
+    background-color: var(--bgLight);
+    border: 1px solid var(--white);
+    color: var(--white);
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+section .banner {
+    background-color: var(--bgDark);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.banner>img {
+    padding: 2rem;
+}
+
+.banner .typo {
+    margin-left: -15rem;
+    margin-top: -10rem;
+    color: var(--white);
+}
+
+.banner .typo h1 {
+    font-weight: 200;
+    font-size: 1.75rem;
+}
+
+.banner .typo p {
+    line-height: 2;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.banner .bottom {
+    background-color: var(--bgLight);
+    position: absolute;
+    height: 2rem;
+    width: 100%;
+    bottom: 0;
+}
+
+.banner .ads {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 1rem;
+    border-radius: 1rem;
+    height: 3rem;
+    left: 5rem;
+    width: 45.5rem;
+    font-size: .75rem;
+}
+
+.banner .ads div {
+    display: flex;
+    align-items: center;
+}
+
+.banner .ads div span {
+    padding-left: 1rem;
+}
+
+.form {
+    position: absolute;
+    background-color: var(--white);
+    height: 28.6rem;
+    width: 30rem;
+    right: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.form h1 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.form h1 span {
+    color: var(--pink);
+}
+
+.form p span {
+    color: var(--pink);
+}
+
+.form .radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: .2rem;
+}
+
+.form .top {
+    margin-top: .5rem;
+}
+
+.form .top input {
+    width: 20rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    outline: none;
+}
+
+.form .option select {
+    padding: .5rem;
+    outline: none;
+}
+
+.form .option input {
+    padding: 0.5rem;
+    width: 13.6rem;
+    margin: 0.25rem;
+    outline: none;
+}
+
+.form .submit {
+    display: flex;
+    align-items: center;
+    margin: .5rem;
+}
+
+.form .submit button {
+    background-color: var(--pink);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.form .submit span {
+    color: var(--pink);
+    font-size: .76rem;
+    margin-left: .5rem;
+}
+
+.form .text p {
+    font-size: 1.2rem;
+}
+
+.form .text p a {
+    color: var(--pink);
+}
+
+.form .text span {
+    font-size: .75rem;
+}
+
+.form .text span a {
+    color: var(--pink);
+}
+
+/*  Heade styling end */
+
+/* Main Section Part Styling */
+
+.courses {
+    background-color: var(--white);
+}
+
+.courses>h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 200;
+    padding: 4rem 0;
+}
+
+.courses .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .course-container {
+    background-color: white;
+    margin: 2rem;
+    width: 25rem;
+    height: 35rem;
+}
+
+.course-container .course-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--white);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+    height: 15%;
+}
+
+.course-container .sd {
+    background-color: var(--bgLight);
+
+}
+
+.course-container .course-heading h3 {
+    font-weight: 200;
+}
+
+.course-container .course-heading div img {
+    height: 40px;
+    width: 40px;
+}
+
+.course-container .ml {
+    background-color: var(--violet);
+}
+
+.course-container .master {
+    background-color: var(--brown);
+}
+
+.course-detail {
+    padding: 2rem;
+    height: 65%;
+    overflow: auto;
+}
+
+.course-detail .yoe {
+    display: flex;
+    align-items: center;
+}
+
+.course-detail .yoe p {
+    color: gray;
+    margin-left: 1rem;
+}
+
+.course-detail h4 {
+    font-weight: 200;
+    margin-top: 1rem;
+    line-height: 1.3;
+}
+
+.course-detail p {
+    color: gray;
+    line-height: 1.2;
+}
+
+.course-container .course-bottom img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.course-container .course-bottom span {
+    color: gray;
+}
+
+.course-container .course-bottom div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 3rem;
+}
+
+.course-container .course-bottom div p {
+    color: var(--bgLight);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+/* Main Section Part Styling End */
+
+/* Footer Style Start */
+
+footer {
+    background-color: var(--footerBg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem;
+}
+
+footer .first {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .first .logo {
+    height: 40px;
+    width: 130px;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+footer p {
+    color: var(--white);
+}
+
+footer .app-head {
+    display: flex;
+    align-items: center;
+}
+
+footer .app-head div {
+    margin-right: 1rem;
+}
+
+footer .app-head div img {
+    width: 120px;
+}
+
+footer .app-head img {
+    width: 80px;
+    margin: 1rem 0;
+}
+
+footer .second {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .second h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+footer .second a {
+    text-decoration: none;
+    color: var(--footerText);
+    line-height: 1.4;
+}
+
+footer .third {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .third h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+footer .third a {
+    text-decoration: none;
+    color: var(--footerText);
+    line-height: 1.4;
+}
+
+footer .fourth {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .fourth h4 {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+footer .fourth a {
+    text-decoration: none;
+    color: var(--footerText);
+    line-height: 1.4;
+}
